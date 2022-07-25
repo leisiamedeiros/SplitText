@@ -10,7 +10,7 @@ object HandleText extends App {
     var wordsInLine = List.empty[String]
 
     words.foreach(word => {
-      var maxLen = word.length + line.length
+      val maxLen = word.length + line.length
       if maxLen > delimiter then
         wordsInLine = addWordInList(line, wordsInLine)
         line = s"$word "
